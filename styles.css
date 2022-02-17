@@ -1,0 +1,396 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@0;1&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Anonymous Pro', monospace;
+}
+.message{display: none;}
+body{
+    background: rgb(122, 119, 119);
+    font-size: 14px;
+    line-height:22px ;
+    color: rgb(17, 17, 17); 
+   
+    width: 100%;
+    
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.semi_bold{
+    font-weight: 500;
+    font-size: 14px;
+    color:beige
+}
+
+.cv{
+  
+    margin-top: 0%;
+    margin-left: 0%;
+    display: flex;
+    width: 100%;
+    clear: both;
+    align-self: center;
+    
+}
+
+.cv .cv_left{
+    width:30% ;
+    background-color: rgb(13, 76, 105);
+}
+
+.cv.cv_left.profile{
+    width :100%;
+    height:280px;
+}
+
+.profile img{
+    width: 390px;
+    height: 300px;   
+}
+
+.cv .cv_left .content{
+    padding: 0 25px;
+}
+
+.cv .title{
+    margin-bottom: 20px; ;
+}
+.cv .cv_left .bold{
+    color: #fff;
+}
+.cv .cv_left .regular{
+    color:#b1eaff;
+}
+.cv .cv_item {
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+}
+.cv .cv_left .cv_item:last-child,
+.cv .cv_right .cv_item:last-child 
+{
+    border-bottom: 0px;
+}
+.cv .cv_left ul li{
+    display: flex;
+    align-items: center ;
+    margin-bottom: 10px;
+}
+.cv .cv_left.cv_item ul li:last-child{
+    margin-bottom: 0;
+}
+.cv .cv_left  ul li .icon
+ {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+
+}
+.cv .cv_left .icon i,
+.cv .cv_right .cv_hobby ul li i 
+{
+    text-align :center;
+    position:absolute;
+    color: #0bb5f4;
+    top: 50%;
+    left : 50%;
+    transform:translate(-50%,-50%);
+}
+.cv .cv_left ul li .data {
+    color :blanchedalmond;
+    font-size: 12px;
+    
+}
+.cv .cv_left .skills ul li{
+    color: blanchedalmond;
+    justify-content: space-between;
+}
+.cv .cv_left .skills .skillsname{
+    width: 25%;
+   
+}
+.cv .cv_left .skills .skillprogress{
+    width:60%;
+    margin :0 5px;
+    height: 5px;
+    background:#000608 ;
+    position: relative;
+}
+
+.cv .cv_left .skills .skillpre{
+    width :15%;
+}
+.cv .cv_left .skills .skillprogress span{
+   position: absolute;
+   top:0;
+   left:0;
+   height: 100%;
+   background: #fff;
+}
+.cv .cv_left .social.semi_bold{
+    color:#fff;
+    
+    margin-bottom: 3px;
+
+}
+.cv .cv_right {
+   
+    background: #fff;
+    padding: 25px;
+    width: 70%;
+}
+ .cv .cv_right .bold{
+     color:#0bb5f4;
+
+ }
+ .cv .cv_right .cv_work ul,
+ .cv .cv_right .cv_education ul{
+     padding-left: 40px;
+    
+ }
+ .cv .cv_right ul li {
+     position: relative;
+ }
+ .cv .cv_right ul li .date {
+    color: #bd7416; 
+    font-size: 16px;
+
+     
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+ .cv .cv_right ul li  .semi_bold {
+     margin-bottom: 20px;
+     font-size: 15px;
+ 
+
+ }
+ .cv .cv_right ul li :last-child.info{
+    margin-bottom: 0px;
+
+}
+
+
+ .cv .cv_right .cv_hobby ul{
+     display: flex;
+     justify-content: space-between;
+ }
+ .cv .cv_right .cv_hobby ul li{
+    width: 80px;
+    height:80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color:#0bb5f4
+}
+.cv .cv_right .cv_hobby ul li i{
+    font-size:30px ;
+}
+
+.cv .cv_right .cv_hobby ul li:last-child:before{
+    display: none;
+}  
+    
+
+/*--------------------------------*/
+@media(min-width:1400px){
+    body {background-color: rgba(13, 14, 13, 0.644);
+   
+   }
+    .cv{
+  
+        margin-top: 0%;
+        display: flex;
+        width: 100%;
+        clear: both;
+ 
+    }
+    .cv .cv_left .profile img {
+        width :500px;
+        height: 300px;        
+    } 
+   
+}
+
+@media(min-width:1200px) and (max-width: 1400px){
+    body {background-color: rgb(62, 71, 73);
+    }
+    .cv{
+  
+        margin-top: 0%;
+        display: flex;
+        width: 100%;
+        clear: both;
+    }
+   .cv .cv_left 
+   {font-size: 13px;}
+    
+
+    .cv .cv_right 
+     {font-size: 13px;   }
+}
+@media(min-width:800px) and (max-width: 1200px){
+    body 
+    {background-color: rgb(94, 125, 139);
+       }
+
+    .cv{
+  
+        margin-top: 0%;
+        display: flex;
+        width: 100%;
+        clear: both; 
+    }
+    .cv_left {font-size: 12px; }
+
+   .cv .profile img {
+            width :340px;
+            height: 300px;        
+        } 
+
+   .cv .cv_right  {font-size: 12px;
+        }
+
+}
+@media(min-width:600px) and (max-width: 800px){
+    body {background-color: rgb(116, 238, 126);
+        
+    height: 100%;}
+    .cv{
+  
+        margin-top: 0%;
+        display: flex;
+        width: 100%;
+        clear: both;
+       
+        
+        
+       
+        
+    }
+    .cv .cv_left {font-size: 11px;
+        
+    }
+   .cv .profile img {
+        width: 150px;
+        height: 150px;
+       margin-left: 100px;
+        border-radius: 50%;
+        shape-outside: circle(50%);
+        margin-left: 25px;
+        
+    } 
+    .cv .cv_right  {font-size: 11px;
+      }
+
+    .cv .cv_right ul li {
+            position: relative;
+            font-size: 12px;
+        }
+    
+}
+@media(min-width:300px) and (max-width: 600px){
+    body {background-color: rgb(172, 241, 177);
+    height: 50%;}
+
+   .cv .profile img {
+        width: 75%;
+        height: 250px;
+       margin-left: 50px;
+        border-radius: 70%;
+        shape-outside: circle(70%);
+       
+        align-content: center;
+    }
+ 
+   .cv {display: block;
+    width: 100%;
+
+}
+
+ .cv  .cv_left{width: 100%; height:100% ;
+}
+.cv .cv_right {
+    width: 100%; height:100% ;
+}
+
+.cv .cv_left ul li{
+    
+    margin-bottom: 5px;
+}
+
+.cv .cv_left  ul li .icon
+ {
+    width: 20px;
+    height: 20px;
+    
+
+}
+
+.cv .cv_left ul li .data {
+    color :blanchedalmond;
+    font-size: 10px;
+    
+}
+
+.cv .cv_left .skills .skillsname{
+    width: 25%;
+   
+}
+.cv .cv_left .skills .skillprogress{
+    width:60%;
+    margin :0 5px;
+    height: 5px;
+    background:#000608 ;
+    position: relative;
+}
+
+
+
+
+
+ .cv .cv_right .cv_work ul,
+ .cv .cv_right .cv_education ul{
+     padding-left: 10px;
+    
+ }
+ .cv .cv_right ul li {
+     position: relative;
+     font-size: 10px;
+ }
+ 
+
+ 
+ .cv .cv_right .cv_hobby ul li{
+    
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color:#0bb5f4
+}
+.cv .cv_right .cv_hobby ul li i{
+    font: size 8px;
+}
+
+.cv .cv_right .cv_hobby ul li:last-child:before{
+    display: none;
+}  
+   
+        
+}
+@media(max-width:300px){
+    .cv {display: none;}
+    .message{display: block;}
+}
